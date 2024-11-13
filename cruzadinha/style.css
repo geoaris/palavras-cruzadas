@@ -3,100 +3,84 @@
     padding: 0;
 }
 
-/* Popup Background */
 .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999; /* Ensures the popup is on top */
-    opacity: 0; /* Initially hidden */
-    pointer-events: none; /* Prevent interaction until shown */
-    transition: opacity 0.3s ease;
-  }
-  
-  /* Card styling */
-  .card {
-    width: 300px;
-    height: 220px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 30px;
-    gap: 13px;
-    position: relative;
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Cookie SVG (optional, if you want to keep it) */
-  #cookieSvg {
-    width: 50px;
-  }
-  
-  #cookieSvg g path {
-    fill: rgb(97, 81, 81);
-  }
-  
-  .cookieHeading {
-    font-size: 1.2em;
-    font-weight: 800;
-    color: rgb(26, 26, 26);
-  }
-  
-  .cookieDescription {
-    text-align: center;
-    font-size: 0.7em;
-    font-weight: 600;
-    color: rgb(99, 99, 99);
-  }
-  
-  .buttonContainer {
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-  }
-  
-  .acceptButton {
-    width: 80px;
-    height: 30px;
-    background-color: #7b57ff;
-    transition-duration: .2s;
-    border: none;
-    color: rgb(241, 241, 241);
-    cursor: pointer;
-    font-weight: 600;
-    border-radius: 20px;
-  }
-  
-  .declineButton {
-    width: 80px;
-    height: 30px;
-    background-color: rgb(218, 218, 218);
-    transition-duration: .2s;
-    color: rgb(46, 46, 46);
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    border-radius: 20px;
-  }
-  
-  .declineButton:hover {
-    background-color: #ebebeb;
-    transition-duration: .2s;
-  }
-  
-  .acceptButton:hover {
-    background-color: #9173ff;
-    transition-duration: .2s;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card {
+  width: 320px;
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  gap: 20px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.card p {
+  color: #f0f0f0;
+}
+
+#cookieSvg {
+  width: 50px;
+}
+
+#cookieSvg g path {
+  fill: rgb(97, 81, 81);
+}
+
+
+.cookieHeading {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: rgb(26, 26, 26);
+  text-align: center;
+}
+
+.cookieDescription {
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: rgb(99, 99, 99);
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.acceptButton {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(255, 34, 137);;
+  transition: background-color 0.2s ease;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.acceptButton:hover {
+  background-color: rgb(255, 34, 137);;
+}
 
 body {
     background-color: rgb(231, 231, 231);
@@ -112,7 +96,7 @@ body {
 
 header {
     width: 100%;
-    height: 80px;
+    height: 90px;
     background-color: rgb(20, 20, 20);
     display: flex;
     justify-content: center;
@@ -126,7 +110,7 @@ header h1 {
 }
 
 header h4 {
-    color: rgb(255, 34, 137)
+    color: rgb(255, 34, 137);
 }
 
 .icone-header {
@@ -199,9 +183,8 @@ input {
     height: 24px;
 }
 
-/* From Uiverse.io by adamgiebl */
 #card {
-    width: 45%;
+    width: 50%;
     height: 100%;
     float: right;
     scroll-behavior: smooth;
@@ -216,29 +199,61 @@ input {
 }
 
 h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .footer {
-    width: 100%;
-    height: 40px;
-    position: absolute;
-    bottom: 0;
-    background-color: rgb(20, 20, 20);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-transform: uppercase;
-    border-top: 3px solid rgb(255, 34, 137);
-    flex-direction: column;
+  width: 100%;
+  height: 30px;
+  position: relative;
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-top: 3px solid rgb(255, 34, 137);
+  padding:60px 0;
+  flex-direction: column;
 }
 
 .developers {
-    width: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Ajusta a distância dos ícones das laterais */
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: #afafaf;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: rgb(255, 34, 137);
+}
+
+.social-icons img {
+  width: 20px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.footer h4 {
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+.social-icons img.geovana, .social-icons img.paloma {
+  width: 60px;
 }

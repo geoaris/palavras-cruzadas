@@ -1,25 +1,33 @@
-// Show the popup when the page loads
+// Exibe o popup quando a página carregar
 window.onload = function() {
-    const popup = document.getElementById('cookiePopup');
-    popup.style.opacity = 1; /* Make the popup visible */
-    popup.style.pointerEvents = 'auto'; /* Allow interaction with the popup */
-  };
-  
-  // Handle cookie consent actions
+  const popup = document.getElementById('cookiePopup');
   const acceptButton = document.querySelector('.acceptButton');
   const declineButton = document.querySelector('.declineButton');
+  const startButton = document.getElementById('startButton');
+  const exitButton = document.getElementById('exitButton');
   
+  // Exibe o popup
+  popup.style.opacity = 3; // Torna o popup visível
+  popup.style.pointerEvents = 'auto'; // Permite o popup
+  
+  // Função de iniciar o jogo
+  startButton.onclick = function() {
+    popup.style.display = 'none';
+  alert(`Jogo iniciado! 
+Agora você pode começar a jogar.`);
+  };
+  
+  // Ação ao aceitar os cookies
   acceptButton.addEventListener('click', () => {
-    // Store user consent (you can set a cookie or just hide the popup)
     localStorage.setItem('cookiesAccepted', 'true');
-    document.getElementById('cookiePopup').style.opacity = 0;
-    document.getElementById('cookiePopup').style.pointerEvents = 'none'; // Hide the popup
+    popup.style.opacity = 0;
+    popup.style.pointerEvents = 'none'; // Desabilita o popup
   });
   
+  // Ação ao recusar os cookies
   declineButton.addEventListener('click', () => {
-    // Store user rejection (you can handle it accordingly)
     localStorage.setItem('cookiesAccepted', 'false');
-    document.getElementById('cookiePopup').style.opacity = 0;
-    document.getElementById('cookiePopup').style.pointerEvents = 'none'; // Hide the popup
+    popup.style.opacity = 0;
+    popup.style.pointerEvents = 'none';
   });
-  
+};
