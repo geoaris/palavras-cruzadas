@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cruzadinha_gipa.css">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Montserrat:wght@100..900&family=Nanum+Gothic+Coding&display=swap');
+    </style>
+
+    <title>GP's Cruzadinha</title>
+</head>
+
+<header>
+    <img class="icone-header" src="imagem.png">
+
+    <div class="titulo">
+        <h1>CRUZADINHA</h1> <br>
+        <h4>Arquitetura de Computadores</h4>
+    </div>
+
+</header>
+
+<div class="container">
+
+    <body>
+
+        <div id="cruzada">
+            <table class="tabela">
+                <tr>
+                    <td></td>
+                    <td>1 -</td>
+                    <td><input id="F" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2 -</td>
+                    <td></td>
+                    <td><input id="L" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input id="Q" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="U" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="D" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="vazio" readonly="readonly"> </td>
+                    <td><input id="C" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="O" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="R" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="E" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="P" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td>7</td>
+                    <td></td>
+                    <td></td>
+                    <td>8</td>
+                    <td></td>
+                    <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input id="H" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td>9</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>6 -</td>
+                    <td><input id="R" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="E" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="G" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="I" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="T" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="R" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="D" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="O" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="R" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="E" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="D" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="O" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="7" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="O" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td><input id="D" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="U" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td>10 - </td>
+                    <td><input id="D" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="M" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="M" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td><input id="R" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>11 - </td>
+                    <td><input id="R" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="M" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="E" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="L" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>12</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="vazio" readonly="readonly"> </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="D" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="C" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>14</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="vazio" readonly="readonly"> </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="O" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td>13 -</td>
+                    <td><input id="C" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="P" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="U" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="T" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="B" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="R" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>16</td>
+                    <td><input id="L" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="U" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>15 -</td>
+                    <td><input id="M" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="E" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="M" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="O" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="R" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="I" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="vazio" readonly="readonly"> </td>
+                    <td><input id="D" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="E" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="vazio" readonly="readonly"> </td>
+                    <td><input id="M" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="5" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="B" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="U" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="card">
+            <ol class="dicas">
+                <h2 class="titulo_dicas"> DICAS PARA RESOLUÇÃO </h2>
+                <li>Qual memória armazena dados não voláteis com maior mobilidade?:</li> <br>
+
+                <li>Nome dado a um microprocessador com quatro núcleos de processamento: </li> <br>
+
+                <li>Sinal usado para ativar um chip específico em um sistema:</li> <br>
+
+                <li>Qual memória pode ser apagada manualmente e reprogramada?:</li> <br>
+
+                <li>Barramento que transporta endereços de memória para a CPU e outros componentes:</li> <br>
+
+                <li>Nome dado às memórias internas dos microprocessadores?</li> <br>
+
+                <li>Microprocessador Intel de alto desempenho, projetado para tarefas exigentes:</li> <br>
+
+                <li>Qual memória é somente de leitura e armazena dados essenciais?</li> <br>
+
+                <li>Processador com dois núcleos, adequado para multitarefa básica:</li> <br>
+
+                <li>Técnica que permite transferência direta de dados entre a memória e os dispositivos, sem envolver a CPU:</li> <br>
+
+                <li>Qual memória armazena dados temporários enquanto o computador está ligado?</li> <br>
+
+                <li>Barramento que transporta os dados entre a CPU, memória e outros dispositivos:</li> <br>
+
+                <li>Qual é o componente responsável processar dados e executar instruções no computador?</li> <br>
+
+                <li>Circuito dentro da CPU que realiza operações lógicas e matemáticas</li> <br>
+
+                <li>Nome dado a memória de grande capacidade que armazenam dados permanentementes?</li> <br>
+
+                <li>Microprocessador Intel de médio desempenho, ideal para tarefas diárias e multitarefa moderada</li> <br>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <div class="developers">
+                <img class="geovana" src="imagem.png">
+                <h4>GP's Por Geovana & Paloma  © 2024 </h4>
+                <img class="paloma" src="imagem.png">
+            </div>
+        </div>
+
+    </body>
+</div>
+
+</html>
+<script>
+
+function mostraTotal(input) {
+    var valor = input.value.toUpperCase();
+    var id = input.id;
+    if (valor == id) {
+        input.value = `${input.value}`;
+        input.style = `background-color:rgb(94, 230, 94); color:black; border:1px solid`;
+
+    }else{
+        input.style = `background-color:rgb(226, 45, 45); border:1px solid`;
+        input.value = ``;
+    }
+}
+
+</script>
