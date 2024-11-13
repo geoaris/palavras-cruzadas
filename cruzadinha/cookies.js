@@ -1,10 +1,10 @@
 // Exibe o popup quando a página carregar
 window.onload = function() {
-  const popup = document.getElementById('cookiePopup');
-  const acceptButton = document.querySelector('.acceptButton');
-  const declineButton = document.querySelector('.declineButton');
-  const startButton = document.getElementById('startButton');
-  const exitButton = document.getElementById('exitButton');
+  var popup = document.getElementById('cookiePopup');
+  var acceptButton = document.querySelector('.acceptButton');
+  var declineButton = document.querySelector('.declineButton');
+  var startButton = document.getElementById('startButton');
+  var exitButton = document.getElementById('exitButton');
   
   // Exibe o popup
   popup.style.opacity = 3; // Torna o popup visível
