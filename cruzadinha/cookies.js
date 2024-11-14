@@ -10,13 +10,6 @@ window.onload = function() {
   popup.style.opacity = 3; // Torna o popup visível
   popup.style.pointerEvents = 'auto'; // Permite o popup
   
-  // Função de iniciar o jogo
-  startButton.onclick = function() {
-    popup.style.display = 'none';
-  alert(`Jogo iniciado! 
-Agora você pode começar a jogar.`);
-  };
-  
   // Ação ao aceitar os cookies
   acceptButton.addEventListener('click', () => {
     localStorage.setItem('cookiesAccepted', 'true');
