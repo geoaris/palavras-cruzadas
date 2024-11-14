@@ -239,15 +239,19 @@ margin-bottom: 3px;
 }
 
 .social-icons {
-display: flex;
-justify-content: center;
-gap: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 0.5vw;
 }
 
 .social-icons a {
-color: #afafaf;
-font-size: 1.3vw;
-transition: color 0.3s;
+  color: #696969;
+  font-size: 1.5vw;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: rgb(255, 34, 137) /* Cor ao passar o mouse nos ícones */
 }
 
 .footer h4 {
